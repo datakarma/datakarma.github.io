@@ -1,0 +1,701 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300;400;500;600;700&display=swap');
+/* ----- BASE ----- */
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+img{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    transition: 0.4s;
+}
+a:hover{
+    text-decoration: none;
+    transition: 0.4s;
+}
+.lead{
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+.lead-large{
+    font-size: 1.5rem;
+    line-height: 2.375rem;
+    font-weight: 400;
+}
+.white-box{
+    background: #ffffff;
+    box-shadow: 0 20px 70px 0 rgb(189 183 201 / 46%);
+    border-radius: 0.3125rem;
+    padding: 1.9rem 2.1rem 1.6rem 2rem;
+    margin-bottom: 2.1rem;
+}
+/* ----- /BASE ----- */
+/*  */
+/* ----- TYPOGRAPHY ----- */
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Teko', sans-serif;
+    font-weight: 400;
+}
+h1{
+    font-size: 8.484375rem;
+    line-height: 7.83125rem;
+    letter-spacing: -0.5px;
+    margin-bottom: 2.8rem;
+}
+h2{
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    color: #222222;
+    font-weight: 500;
+    letter-spacing: -1.8px;
+    margin-bottom: 2.4rem;
+}
+h3{
+    font-size: 1.625rem;
+    line-height: 1.625rem;
+    font-weight: 500;
+    color: #222222;
+    letter-spacing: -0.2px;
+    margin-bottom: 1rem;
+}
+h5{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+}
+/* ----- /TYPOGRAPHY ----- */
+/*  */
+/* ----- BUTTONS ----- */
+.btn{
+    font-family: 'Teko', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 0.85rem 4.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+}
+.btn:hover, .btn:focus{
+    box-shadow: none;
+}
+.btn img {
+    margin: 0 -0.4rem 0 0.6rem;
+}
+.btn-violet{
+    border-color: #bb06df;
+    background-color: #bb06df;
+    color: #fff;
+}
+.btn-violet:hover{
+    color: #fff;
+}
+/* ----- /BUTTONS ----- */
+/*  */
+/* ----- HEADER ----- */
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 3rem 0;
+}
+.header .menu{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.header .menu li{
+    text-transform: uppercase;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.375rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    margin-left: 1.6rem;
+    position: relative;
+}
+.header .menu li.active:before {
+    content: '';
+    height: 2px;
+    width: 1.1rem;
+    background: #bb06df;
+    position: absolute;
+    left: -1.5rem;
+    top: 0.6rem;
+}
+.header .menu li.active a{
+    color: #bb06df;
+}
+.header .menu a:hover {
+    color: #bb06df;
+}
+.header .menu a{
+    color: #fff;
+}
+.header .logo{
+    display: block;
+    width: 23.8625rem;
+}
+.header .header-nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-right: 0.6rem;
+}
+/* ----- /HEADER ----- */
+/*  */
+/* ----- SECTION BANNER ----- */
+.section-banner{
+    background-image: url(../images/banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 62.5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+}
+.section-banner p {
+    max-width: 49rem;
+    margin-left: 0.4rem;
+}
+.section-banner .content-wrap {
+    padding-top: 8rem;
+}
+/* ----- /SECTION BANNER ----- */
+/*  */
+/* ----- SECTION ABOUT ----- */
+.section-about {
+    padding-top: 11rem;
+    padding-bottom: 2.6rem;
+}
+.section-about .image-wrap {
+    box-shadow: 0 20px 70px 0 rgb(119 148 242 / 30%);
+    margin-left: 0.4rem;
+    width: 31.4rem;
+    height: 35.9rem;
+    border-radius: 0.3rem;
+    overflow: hidden;
+}
+.section-about .image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.section-about .content-wrap{
+    padding-top: 0.3rem;
+}
+/* ----- /SECTION ABOUT ----- */
+/*  */
+/* ----- SECTION SERVICES ----- */
+.section-services {
+    padding-top: 3.2rem;
+    padding-bottom: 6.7rem;
+}
+.section-services .services-wrap {
+    margin: 0 -1.8rem 0 -0.2rem;
+}
+.service {
+    position: relative;
+}
+.service:last-child {
+    margin-bottom: 0;
+}
+.service:after {
+    content: '';
+    height: 6px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom-left-radius: 0.3125rem;
+    border-bottom-right-radius: 0.3125rem;
+    background: #bb06df;
+    opacity: 0;
+    transition: 0.4s;
+}
+.service:hover:after{
+    transition: 0.4s;
+    opacity: 1;
+}
+.service .icon{
+    width: 4.375rem;
+    height: 4.375rem;
+    background-color: #222222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.3rem;
+    margin-bottom: 1.8rem;
+}
+.section-services .content-wrap {
+    padding-left: 1.3rem;
+    padding-right: 5.1rem;
+    padding-bottom: 5.1rem;
+}
+.section-services .services-wrap .col {
+    padding: 0 1.2rem;
+}
+.section-services .services-wrap .col:first-child {
+    margin-top: 6.4rem;
+}
+/* ----- /SECTION SERVICES ----- */
+/*  */
+/* ----- SECTION TECHNOLOGIES ----- */
+.section-technologies {
+    padding-bottom: 7.9rem;
+}
+.section-technologies .content-wrap {
+    background: rgb(240 233 249 / 32%);
+    max-width: 1560px;
+    margin: 0 auto;
+    padding-top: 7.2rem;
+    width: 100%;
+    padding-bottom: 4.8rem;
+}
+.section-technologies .container {
+    padding: 0 1.4rem;
+}
+.section-technologies .row {
+    margin-top: 3.3rem;
+}
+.technology {
+    padding: 2.3rem 2.4rem 1.1rem 2.1rem;
+    margin-bottom: 1.7rem;
+}
+.technology img {
+    display: block;
+    margin-bottom: 1.9rem;
+}
+/* ----- /SECTION TECHNOLOGIES ----- */
+/*  */
+/* ----- SECTION TESTIMONIALS ----- */
+.section-testimonials{
+    background-image: url(../images/testimonials-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 10.2rem;
+    padding-bottom: 6.3rem;
+    position: relative;
+}
+.section-testimonials:before{
+    content: '';
+    background-image: url(../img/testimonials-bg-1.png);
+    background-repeat: no-repeat;
+    background-size: 37.2% 87.6%;
+    background-position-y: 6.2rem;
+    background-position-x: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.2;
+}
+.section-testimonials:after {
+    content: '';
+    background-image: url(../img/testimonials-bg-2.png);
+    background-repeat: no-repeat;
+    background-size: 30.7% 100%;
+    background-position-y: 0;
+    background-position-x: right;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.2;
+}
+.testimonial-content{
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.testimonial-content h2 {
+    color: #fff;
+    margin-bottom: 1.9rem;
+}
+.testimonial-content p{
+    line-height: 2.75rem;
+    letter-spacing: -0.1px;
+}
+.testimonial-content .user-avatar {
+    margin-top: 3.6rem;
+    margin-bottom: 1.3rem;
+}
+.testimonial-content .position {
+    display: block;
+    font-size: 0.875rem;
+    line-height: 0.875rem;
+    text-transform: uppercase;
+    margin-bottom: 1.3rem;
+}
+/* ----- /SECTION TESTIMONIALS ----- */
+/*  */
+/* ----- SECTION CONTACT US ----- */
+.section-contact-us {
+    padding-top: 10.6rem;
+    padding-bottom: 11.9rem;
+    background-image: url(../img/contact-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: bottom;
+}
+.section-contact-us .row {
+    margin: 0 -0.7rem;
+}
+.section-contact-us h2 {
+    margin-bottom: 0.9rem;
+}
+.section-contact-us form {
+    margin-top: 6.7rem;
+}
+.form-group {
+    margin-bottom: 3rem;
+}
+.form-group label {
+    font-size: 0.875rem;
+    line-height: 0.875rem;
+    color: #899097;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 0.2rem;
+    margin-left: -0.1rem;
+    letter-spacing: -0.2px;
+}
+.form-control {
+    height: 2rem;
+    border: none;
+    border-bottom: 1px solid #dcdee2;
+    border-radius: 0;
+    color: #222222;
+    font-size: 1.125rem;
+    padding: 0.4rem 0rem;
+    letter-spacing: -0.2px;
+    background-color: transparent;
+}
+.form-control:focus, .form-control:active {
+    box-shadow: none;
+    border-bottom-color: #222222;
+}
+.form-group {
+    margin-bottom: 3rem;
+}
+textarea.form-control {
+    height: 5.1rem;
+}
+form .btn {
+    margin-left: auto;
+    margin-right: 0.9rem;
+    margin-top: 1.2rem;
+}
+/* ----- /SECTION CONTACT US ----- */
+/*  */
+/* ----- FOOTER ----- */
+.footer {
+    background: #222222;
+    padding-top: 3.2rem;
+    padding-bottom: 3.7rem;
+}
+.footer .row {
+    margin: 0 0.2rem;
+}
+.footer .footer-logo {
+    width: 23.7rem;
+    display: block;
+}
+.footer p{
+    color: #999999;
+    font-size: 0.875rem;
+    font-weight: 400;
+    margin-bottom: 0.9rem;
+    margin-right: 0.3rem;
+}
+/* ----- /FOOTER ----- */
+/*  */
+/* ----- MEDIA ----- */
+@media(min-width: 1200px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1215px;
+    }
+}
+@media(max-width: 1439px){
+    /* ----- SECTION SERVICES ----- */
+    .section-services .services-wrap {
+        margin: 0;
+    }
+    /* ----- /SECTION SERVICES ----- */
+    /*  */
+}
+@media(max-width: 1199px){
+    .white-box {
+        padding: 1.5rem 1.1rem 0.8rem 1.5rem;
+    }
+    /* ----- SECTION ABOUT ----- */
+    .section-about .image-wrap {
+        width: 27rem;
+        height: 31rem;
+    }
+    /* ----- /SECTION ABOUT ----- */
+    /*  */
+    /* ----- SECTION SERVICES ----- */
+    .section-services .content-wrap {
+        padding-right: 2rem;
+        padding-left: 15px;
+    }
+    .section-services .services-wrap .col {
+        padding: 0 15px;
+    }
+    
+    /* ----- /SECTION SERVICES ----- */
+}
+@media(max-width: 991px){
+    /* ----- HEADER ----- */
+    .header .logo {
+        width: 17rem;
+    }
+    .header .header-nav {
+        padding-right: 0;
+    }
+    .header .menu {
+        padding-top: 0.6rem;
+    }
+    /* ----- /HEADER ----- */
+    /*  */
+    /* ----- SECTION ABOUT ----- */
+    .section-about .image-wrap {
+        margin: 0 auto 3rem;
+    }
+    .section-about {
+        padding-top: 6rem;
+    }
+    /* ----- /SECTION ABOUT ----- */
+    /*  */
+    /* ----- SECTION SERVICES ----- */
+    .section-services .content-wrap {
+        padding-bottom: 0;
+        margin-bottom: 2.3rem;
+    }
+    .section-services .services-wrap .col:first-child {
+        margin-top: 0;
+    }
+    /* ----- /SECTION SERVICES ----- */
+    /*  */
+    /* ----- SECTION TECHNOLOGIES ----- */
+    .technology {
+        min-height: 24.8rem;
+    }
+    /* ----- /SECTION TECHNOLOGIES ----- */
+    /*  */
+    /* ----- SECTION CONTACT US ----- */
+    .section-contact-us {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    .section-contact-us form {
+        margin-top: 4rem;
+    }
+    /* ----- /SECTION CONTACT US ----- */
+    /*  */
+}
+@media(max-width: 767px){
+    body.overflow {
+        overflow: hidden;
+    }
+    h1 {
+        font-size: 3rem;
+        line-height: 3.2rem;
+        margin-bottom: 1.5rem;
+    }
+    .lead, .lead-large {
+        font-size: 1rem;
+        line-height: 1.525rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    /* ----- HEADER ----- */
+    .header .menu li.active:before{
+        display: none;
+    }
+    .header {
+        z-index: 1000;
+        padding: 1.5rem 0;
+    }
+    .header .row{
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header .menu-btn{
+        height: 1.6rem;
+        width: 2rem;
+        position: relative;
+        display: block;
+    }
+    .header .logo {
+        width: 14rem;
+    }
+    .header .menu-btn span{
+        height: 3px;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 1rem;
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+    .header .menu-btn span:last-child{
+        margin-bottom: 0;
+    }
+    .header .header-nav{
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.4s;
+        transform: translateX(100%);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        min-height: 100vh;
+        background-image: url(../img/contact-bg.png);
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        background: #fff;
+        flex-direction: column;
+        padding: 5rem 1rem;
+    }
+    .header.menu-open .header-nav {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0);
+        transition: 0.4s;
+    }
+    .header .menu {
+        flex-direction: column;
+    }
+    .header .menu a {
+        color: #222;
+    }
+    .header.menu-open .menu-btn {
+        z-index: 2000;
+    }
+    .header.menu-open .menu-btn span {
+        background: #222;
+        transition: 0.4s;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 0.6rem;
+    }
+    .header .menu li {
+        margin-bottom: 1rem;
+        margin-left: 0;
+    }
+    .header.menu-open .menu-btn span:nth-child(2) {
+        transform: rotate(-45deg);
+    }
+    .header.menu-open .menu-btn span:last-child {
+        display: none;
+    }
+    /* ----- /HEADER ----- */
+    /*  */
+    /* ----- SECTION BANNER ----- */
+    .section-banner {
+        height: 33.5rem;
+        padding-bottom: 2rem;
+    }
+    /* ----- /SECTION BANNER ----- */
+    /*  */
+    /* ----- SECTION ABOUT ----- */
+    .section-about .image-wrap {
+        width: auto;
+        height: auto;
+    }
+    /* ----- /SECTION ABOUT ----- */
+    /*  */
+    /* ----- SECTION SERVICES ----- */
+    .service:last-child {
+        margin-bottom: 2.1rem;
+    }
+    /* ----- /SECTION SERVICES ----- */
+    /*  */
+    /* ----- SECTION TECHNOLOGIES ----- */
+    .technology {
+        min-height: 1rem;
+    }
+    /* ----- /SECTION TECHNOLOGIES ----- */
+    /*  */
+    /* ----- SECTION TESTIMONIALS ----- */
+    .section-testimonials {
+        padding-top: 3.2rem;
+        padding-bottom: 3rem;
+    }
+    .testimonial-content p {
+        line-height: 1.525rem;
+    }
+    .testimonial-content .user-avatar {
+        margin-top: 2.2rem;
+    }
+    .testimonial-content h2 {
+        margin-bottom: 1rem;
+    }
+    .section-testimonials:before {
+        background-size: 57.2% 57.6%;
+        background-position-y: bottom;
+    }
+    .section-testimonials:after {
+        background-size: 41.7% 100%;
+        background-position-y: bottom;
+    }
+    /* ----- /SECTION TESTIMONIALS ----- */
+    /*  */
+    /* ----- SECTION CONTACT US ----- */
+    form .btn {
+        margin: 0 auto;
+    }
+    /* ----- /SECTION CONTACT US ----- */
+    /*  */
+    /* ----- FOOTER ----- */
+    .footer .row {
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer .footer-logo {
+        width: 13rem;
+        margin-bottom: 1.2rem;
+    }
+    .footer {
+        padding-bottom: 2.5rem;
+    }
+    .footer p{
+        margin-right: 0;
+    }
+    /* ----- /FOOTER ----- */
+    /*  */
+}
+/* ----- /MEDIA ----- */
+/*  */
